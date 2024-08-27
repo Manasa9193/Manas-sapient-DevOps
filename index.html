@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Delight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dessert Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#order">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Dessert Delight</h2>
+        <p>Indulge in our range of delicious desserts. From rich chocolate cakes to fruity tarts, we have something for every sweet tooth!</p>
+        <div class="dessert-gallery">
+            <div class="dessert-item">
+                <img src="cake.jpg" alt="Chocolate Cake">
+                <p>Chocolate Cake</p>
+            </div>
+            <div class="dessert-item">
+                <img src="tart.jpg" alt="Fruit Tart">
+                <p>Fruit Tart</p>
+            </div>
+            <div class="dessert-item">
+                <img src="ice-cream.jpg" alt="Ice Cream">
+                <p>Ice Cream</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Dessert Delight, we are passionate about bringing you the finest desserts made with love and the highest quality ingredients. Our team of expert bakers and pastry chefs create delightful treats that are sure to bring a smile to your face.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions or feedback? Reach out to us and we'll get back to you as soon as possible.</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <form id="order-form">
+            <label for="dessert">Choose your dessert:</label>
+            <select id="dessert" name="dessert" required>
+                <option value="">Select...</option>
+                <option value="chocolate-cake">Chocolate Cake</option>
+                <option value="fruit-tart">Fruit Tart</option>
+                <option value="ice-cream">Ice Cream</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <label for="order-email">Email:</label>
+            <input type="email" id="order-email" name="order-email" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dessert Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
